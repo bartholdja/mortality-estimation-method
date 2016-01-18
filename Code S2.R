@@ -16,7 +16,7 @@
 #   and plotDispPdf.R plots the pdf of age at dispersal for males
 
 rm(list = ls())
-setwd("/Users/jabarthold/Downloads/DPhil_supplements-master/chapter_3_mort_meth")
+setwd("...")
 
 library(msm)
 library(RColorBrewer)
@@ -69,10 +69,6 @@ covsNow[idNoSex, ][covsNow[idNoSex, 1] != sex, ] <-
   abs(covsNow[idNoSex, ][covsNow[idNoSex, 1] != sex, ] - 1)
 
 # run model
-#niter <-15000
-#burn <- 5000
-#thin <- 20
-#keep <- seq(burn, niter, thin)
 
 niter <- 15000
 burn <- 5000
